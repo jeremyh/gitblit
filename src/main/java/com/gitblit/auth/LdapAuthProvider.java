@@ -333,6 +333,7 @@ public class LdapAuthProvider extends UsernamePasswordAuthenticationProvider {
 								user = new UserModel(simpleUsername);
 								// Users can create by default.
 								user.canCreate = true;
+								user.canFork = true;
 							}
 
 							// create a user cookie
