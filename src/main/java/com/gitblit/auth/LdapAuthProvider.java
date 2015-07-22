@@ -331,6 +331,8 @@ public class LdapAuthProvider extends UsernamePasswordAuthenticationProvider {
 							if (user == null) {
 								// create user object for new authenticated user
 								user = new UserModel(simpleUsername);
+								// Users can create by default.
+								user.canCreate = true;
 							}
 
 							// create a user cookie
